@@ -36,6 +36,21 @@
 
 Criação de um UI Clone em ReactJS do site dropbox.com, neste projeto foram utilizados conceitos responsivos de desenvolvimento. Tais como mobile first, entre técnicas em CSS como Clip, animation, transform entre outras.
 
+<h1 align="center">
+    <img alt="NextLevelWeek_Proffy" title="#NextLevelWeek" src=".github/dropbox.gif"/>
+</h1>
+
+
+<p align="center">
+
+<a href="https://dropbox-clone-ui.netlify.app/">
+    <img alt="Open Demo Netlify" title="Open Demo Netlify" src="https://www.maistecnologia.com/wp-content/uploads/2015/06/dropbox.jpg" width="50">
+</a>
+<a href="https://github.com/brunobach/proffy/commits/master">
+    <img alt="GitHub last commit" src="https://api.netlify.com/api/v1/badges/81cfb1a2-693f-46b5-8319-2b8b4a27e683/deploy-status">
+</a>
+
+</p>
 
 ## 💻 Projeto : Estrutura
 
