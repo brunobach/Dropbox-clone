@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { Container, HeaderWrapper, Header, DropBoxLogo, Content } from './styles'
+import { Container, HeaderWrapper, Header, HeaderLink, DropBoxLogo, Content } from './styles'
 
 interface Props {
     variant: 'blue' | 'beige' | 'white' | 'black'
@@ -12,6 +12,10 @@ interface Props {
 const Section: React.FC<Props> = ({variant, title, description}) => {
     const buttonVariant = Math.round(Math.random());
     
+    function handleToggle() {
+        if(window.toggleActiveMenu) window.toggleActiveMenu();
+    }
+
     return (
         <Container className={variant}>
             <HeaderWrapper>
@@ -20,7 +24,11 @@ const Section: React.FC<Props> = ({variant, title, description}) => {
                         <DropBoxLogo />
                         <span>Dropbox</span>
                     </h1>
-                    <button>{buttonVariant === 0 ? 'Interagir' : 'Acessar'}</button>
+                    <HeaderLink>
+                        <a href='#'>Para equipes</a>
+                        <a href='#'>Para pessoas físicas</a>
+                    </HeaderLink>
+                    <button onClick={handleToggle}>{buttonVariant === 0 ? 'Interagir' : 'Acessar'}</button>
                 </Header>
             </HeaderWrapper>
             <Content>

@@ -8,6 +8,7 @@ export default createGlobalStyle`
     }
     *, button, input {
         font-family: Roboto, sans-serif;
+        -webkit-font-smoothing: antialiased;
     }
 
     :root {

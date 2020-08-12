@@ -53,12 +53,36 @@ export const HeaderWrapper = styled.div`
 
 `
 
+export const HeaderLink = styled.div`
+
+  display: flex;
+  flex-grow: 1;
+  pointer-events: all;
+  
+  > a {
+    color: var(--color-tertiary);
+    outline: none;
+    text-decoration: none;
+    margin-top: 5px;
+    padding: 20px 15px;
+    font-size: 16px;
+    appearance: none;
+    font-weight: 300;
+    -webkit-font-smoothing: antialiased;
+
+    &:hover {
+        text-decoration: underline;
+    }
+  }
+`
+
 export const Header = styled.header`
     z-index: 3;
     background: var(--bg-color);
 
     display: flex;
     justify-content: space-between;
+    align-items: center;
 
     max-width: 1440px;
     margin: 0 auto;
@@ -70,8 +94,8 @@ export const Header = styled.header`
 
         > span {
             color: var(--text-color);
-            margin-left: 10px;
-            font-size: 29px;
+            margin: 10px 16px;
+            font-size: 30px;
         }
     }
     > button {
@@ -112,6 +136,8 @@ export const Content = styled.div`
   > p {
       margin-top: 20px;
       font-size: 16px;
+      font-weight: 400;
+      line-height: 26px;
       color: var(--text-color);
       max-width: var(--content-width);
   }
