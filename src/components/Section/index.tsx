@@ -32,8 +32,8 @@ const Section: React.FC<Props> = ({variant, title, description}) => {
                         <span>Dropbox</span>
                     </h1>
                     <HeaderLink>
-                        <a href='#'>Para equipes</a>
-                        <a href='#'>Para pessoas físicas</a>
+                        <a href='/'>Para equipes</a>
+                        <a href='/'>Para pessoas físicas</a>
                     </HeaderLink>
                     <button onClick={handleToggle}>{buttonVariant === 0 ? 'Interagir' : 'Acessar'}</button>
                 </Header>

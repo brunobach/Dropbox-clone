@@ -1,44 +1,124 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<h1 align="center">UI Clone - Dropbox.com</h1>
+ 
+> Este projeto é de propósito estudantil, nenhum elemento nele contido deriva-se para usuários finais. Nenhuma informação aqui inserida será guardada ou repassada para terceiros.
 
-## Available Scripts
+<p align="center">	
+<a href="https://www.linkedin.com/in/bruno-bach/">
+  <img title="Linkedin Bruno Bach"  alt="Linkedin Bruno Bach" src="https://img.shields.io/badge/-brunobach-8257E5?style=flat&logo=Linkedin&logoColor=white" />
+  </a>
+  <img alt="Repository size" src="https://img.shields.io/github/repo-size/brunobach/Dropbox-clone?color=774DD6">
 
-In the project directory, you can run:
+  <a aria-label="Completed" title="GitHub: Guilherme Rodz" alt="GitHub Guilherme Rodz" href="https://github.com/guilhermerodz">
+    <img src="https://img.shields.io/badge/Guilherme Rodz-8257E5?logo=data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAMAAAAoLQ9TAAAALVBMVEVHcExxWsF0XMJzXMJxWcFsUsD///9jRrzY0u6Xh9Gsn9n39fyMecy0qd2bjNJWBT0WAAAABHRSTlMA2Do606wF2QAAAGlJREFUGJVdj1cWwCAIBLEsRU3uf9xobDH8+GZwUYi8i6ucJwrxKE+7D0G9Q4vlYqtmCSjndr4CgCgzlyFgfKfKCVO0LrPKjmiqMxGXkJwNnXskqWG+1oSM+BSwD8f29YLNjvx/OQrn+g99oQSoNmt3PgAAAABJRU5ErkJggg=="></img>
+  </a>
+  <a href="https://github.com/brunobach/proffy/commits/master">
+    <img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/brunobach/Dropbox-clone?color=774DD6">
+  </a> 
+  <img alt="License" src="https://img.shields.io/badge/license-MIT-8257E5">
+   <a href="https://github.com/brunobach/proffy/stargazers">
+    <img alt="Stargazers" src="https://img.shields.io/github/stars/brunobach/Dropbox-clone?color=8257E5&logo=github">
+  </a>
+</p>
+<p align="center">
 
-### `yarn start`
+<p align="center">
+  <a href="#-Descrição">Descrição</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#-Projeto">Projeto</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#-Tecnologias">Tecnologias</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#-como-usar">Como Usar</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#-how-to-contribute">Como contribuir</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#memo-license">License</a>
+</p>
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## ✍ Descrição: Como funciona o projeto??
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+> UI Clone do site dropbox.com disponibilizado pelo [Guilherme Rodz](https://github.com/guilhermerodz) no canal da [Rocketseat](https://www.youtube.com/channel/UCSfwM5u0Kce6Cce8_S72olg).
 
-### `yarn test`
+Criação de um UI Clone em ReactJS do site dropbox.com, neste projeto foram utilizados conceitos responsivos de desenvolvimento. Tais como mobile first, entre técnicas em CSS como Clip, animation, transform entre outras.
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `yarn build`
+## 💻 Projeto : Estrutura
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+```bash
+📂 -- ui-dropbox-clone
+    |-- .gitignore
+    |-- tsconfig.json
+    |-- package.json
+    ┗-- README.md
+    📂 -- public
+     |  |-- favico.ico
+     |  |-- index.html
+     |  |-- manifest.json
+     |  ┗-- robots.txt
+    📂 -- src
+        |-- 📂 assets
+        |  ┗-- landing.jpg
+        |-- 📂 components
+        |  |-- 📂 MenuForm
+        |  |  |-- index.tsx
+        |  |  ┗-- styles.ts
+        |  |-- 📂 Section
+        |  |  |-- index.tsx
+        |  |  ┗-- styles.ts
+        |  |-- 📂 SideMenu
+        |  |  |-- index.tsx
+        |  |  ┗-- styles.ts
+        |-- 📂 data
+        |  |  ┗-- index.ts
+        |-- 📂 styles
+        |     ┗-- GlobalStyles.ts
+        |
+        |-- index.tsx
+        ┗-- App.tsx
+```
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+## 🛸 Tecnologias
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+This project was developed with the following technologies:
 
-### `yarn eject`
+| Check | Descriçao | Tecnologias |
+|:---:|---------|:-----------:|
+| [x]  |DropBox Clone| ![npm](https://img.shields.io/npm/v/react?color=green&label=React&logo=react)  ![npm](https://img.shields.io/npm/v/typescript?color=blue&label=Typescript&logo=typescript&logoColor=blue) ![npm](https://img.shields.io/npm/v/styled-components?color=purple&label=styled-components&logo=styled-components&logoColor=purple)  |
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+## 🧰 Como usar
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+To clone and run this project, you'll need [Git](https://git-scm.com).
 
-## Learn More
+From your command line:
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+### 📥 Como baixar via cmd/terminal 
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+```bash
+# Clone this repository
+$ git clone https://github.com/brunobach/Dropbox-clone/
+
+# Go into the repository
+$ cd Dropbox-clone/src/public/
+
+# Install dependencies
+$ yarn or npm install
+
+```
+
+### 📲 Ou escaneie o codigo no seu dispositivo
+<h1 align="center">
+  <img alt="QRcode Git" title="QRcode Git" src="https://chart.googleapis.com/chart?chs=150x150&cht=qr&chl=https://github.com/brunobach/Dropbox-clone/" width="150px" />
+</h1>
+
+
+## 🤔 Como contribuir
+
+-  Make a fork;
+-  Create a branch with your feature: `git checkout -b my-feature`;
+-  Commit changes: `git commit -m 'feat: My new feature'`;
+-  Make a push to your branch: `git push origin my-feature`.
+
+_After merging your receipt request to done, you can delete a branch from yours_
+
+## 📝 License
+
+This project is under the MIT license. See the [LICENSE](https://github.com/brunobach/Dropbox-clone/blob/master/LICENSE) for details.
+
+Made with by Bruno Bach :wave: [Get in touch!](https://www.linkedin.com/in/bruno-bach/)
